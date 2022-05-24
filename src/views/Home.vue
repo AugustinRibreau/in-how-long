@@ -2,8 +2,8 @@
   <div class="bg-gray-700 w-full h-screen p-5 flex flex-col select-none">
     <h1 class="text-center text-7xl text-white font-bold">Augustin timing</h1>
     <p class="text-center text-white mt-10">{{ now }}</p>
-    <div class="flex flex-row flex-wrap py-20">
-      <div v-for="(data, iterator) in compareDataDates" v-bind:key="iterator" class="max-w-7xl mx-auto sm:px-6 lg:px-8 bg-gray-200 transition duration-300 hover:bg-white rounded-lg p-5">
+    <div class="flex flex-row flex-wrap py-5 lg:py-10">
+      <div v-for="(data, iterator) in compareDataDates" v-bind:key="iterator" class="max-w-7xl mx-auto m-4 sm:px-6 lg:px-8 bg-gray-200 transition duration-300 hover:bg-white rounded-lg p-5">
         <p class="text-center font-bold text-lg text-green-500">{{ data.title }}</p>
         <p class="font-medium text-6xl text-center mt-3">J - {{ compareDate(data.endDate, now) }}</p>
       </div>
